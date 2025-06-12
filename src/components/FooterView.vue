@@ -16,7 +16,7 @@
       <!-- Соцсети -->
       <div class="socials">
         <h5>Наши соцсети</h5>
-        <a href="https://t.me/your_telegram"  target="_blank" class="telegram-button">
+        <a href="https://t.me/ibtcom"  target="_blank" class="telegram-button">
           <img src="/telegram.png" alt="Telegram" />
         </a>
       </div>
