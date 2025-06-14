@@ -155,7 +155,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease; /* Анимация при наведении */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .icon-container img {
@@ -169,26 +169,5 @@ h2 {
   line-height: 1.5;
   text-align: center;
   margin-top: 10px;
-}
-
-/* Адаптивность */
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .icon-container {
-    width: 40px;
-    height: 40px;
-  }
-
-  .icon-container img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .grid-item p {
-    font-size: 0.9rem;
-  }
 }
 </style>
