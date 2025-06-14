@@ -73,7 +73,9 @@
 
       <!-- Кнопка "Задать свой вопрос" -->
       <div class="text-center">
-        <button class="btn btn-primary">Задать свой вопрос</button>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#callbackModal">
+          Задать свой вопрос
+        </button>
       </div>
     </div>
   </section>
@@ -145,7 +147,7 @@
 
 /* Кнопка */
 .btn-primary {
-  background-color: #ff9800;
+  background: #007c9f;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -158,7 +160,8 @@
 }
 
 .btn-primary:hover {
-  background-color: #e67e22;
+  background: #e67e22;
+  transform: translateY(-2px);
 }
 
 .text-center {

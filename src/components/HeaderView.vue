@@ -138,9 +138,6 @@ p{
   background: #e67e22;
   transform: translateY(-2px);
 }
-.butcontainer button:active {
-  transform: translateY(0);
-}
 .custom-modal {
   background-color: #007c9f; /* Голубой фон */
   font-family: "JetBrains Mono", sans-serif;
