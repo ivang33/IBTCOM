@@ -1,7 +1,6 @@
 <template>
   <nav class="main-nav">
     <div class="container">
-      <!-- Логотип/бургер -->
       <div class="nav-header">
         <ul>
           <li><router-link to="/">Главная</router-link></li>
@@ -23,7 +22,6 @@
   display: flex;
   align-items: center;
 }
-
 .main-nav ul {
   list-style: none;
   padding: 0;
@@ -32,11 +30,9 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .main-nav li {
   margin: 0 10px;
 }
-
 .main-nav a {
   text-decoration: none;
   color: white;
@@ -46,14 +42,8 @@
   position: relative;
   padding-bottom: 4px;
 }
-
 .main-nav a:hover{
   color: #ff9800;
   transform: translateY(-2px);
-}
-
-.main-nav a.router-link-exact-active::after {
-  width: 100%;
-  background-color: #e67e22;
 }
 </style>

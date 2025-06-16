@@ -1,7 +1,7 @@
 <template>
   <section class="home-page">
     <div class="container">
-      <h2>ОПТИМИЗИРУЕМ И СОКРАТИМ ВАШИ РАСХОДЫ И ЗАТРАТЫ</h2>
+      <h2>Оптимизируем и сократим ваши расходы на затраты!</h2>
       <div class="icons">
         <!-- Карточка 1 -->
         <router-link to="/about"><div class="icon-card">
@@ -45,14 +45,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-@media (max-width: 768px) {
-  .home-page {
-    min-height: auto;
-    padding: 40px 0;
-  }
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -61,18 +53,15 @@
   justify-content: center;
   text-align: center;
 }
-
 #app > section > div > h2 {
   font-size: 35px;
   color: #007c9f;
   text-align: center;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: bold;
   font-family: "JetBrains Mono", sans-serif;
   margin: 0 auto;
   padding-top: 20px;
 }
-
 .icons {
   display: flex;
   flex-wrap: wrap;
@@ -81,14 +70,12 @@
   width: 100%;
   margin-top: 40px;
 }
-
 .icon-card {
   position: relative;
   width: 300px;
   height: 400px;
   border-radius: 16px;
 }
-
 .icon-card img {
   width: 300px;
   height: 400px;
@@ -99,12 +86,10 @@
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
 .icon-card:hover img {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
 .card-text {
   position: absolute;
   top: 40%;
@@ -123,10 +108,7 @@
   transition: all 0.3s ease;
   font-family: "JetBrains Mono", sans-serif;
 }
-
 .icon-card:hover .card-text {
   transform: translate(-50%, -50%) scale(1.06);
 }
 </style>
-<script setup>
-</script>

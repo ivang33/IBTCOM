@@ -1,14 +1,10 @@
 <template>
   <section class="about-page">
     <div class="content-wrapper">
-      <!-- Заголовок -->
       <h2 class="section-title">Сократим затраты на сотовую связь</h2>
-
-      <!-- Преимущества (одно изображение) -->
       <div class="advantages-image">
         <img src="/icons.png" alt="Преимущества" />
       </div>
-
       <!-- Текст под иконками -->
       <div class="advantages-text">
         <div class="text-item">
@@ -24,8 +20,6 @@
           <p>Смена оператора и тарифа в течение 8 дней</p>
         </div>
       </div>
-
-      <!-- Процесс работы -->
       <div class="process">
         <h3 class="section-subtitle">Как мы сократим затраты</h3>
         <div class="process-content">
@@ -49,8 +43,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Кнопка заказа -->
       <div class="text-center">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#callbackModal">
           Оставить заявку
@@ -68,13 +60,11 @@
   display: flex;
   justify-content: center;
 }
-
 .content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
 .section-title {
   font-size: 32px;
   font-weight: bold;
@@ -82,14 +72,11 @@
   margin-bottom: 40px;
   color: #007c9f;
 }
-
-/* Блок с иконками */
 .advantages-image {
   text-align: center;
   margin-bottom: 20px;
   justify-content: center;
 }
-
 .advantages-image img {
   width: 100%;
   max-width: 800px;
@@ -97,8 +84,6 @@
   display: block;
   margin: 0 auto;
 }
-
-/* Текст под иконками */
 .advantages-text {
   width: 900px;
   display: flex;
@@ -106,7 +91,6 @@
   flex-wrap: wrap;
   margin-bottom: 60px;
 }
-
 .text-item {
   margin: 5px;
   flex: 1 1 200px;
@@ -114,55 +98,46 @@
   font-size: 16px;
   color: #333;
   background-color: #ffffff;
-  border: 2px solid #007c9f; /* Обводка */
+  border: 2px solid #007c9f;
   border-radius: 8px;
   padding: 20px;
-  transition: all 0.3s ease; /* Эффекты при наведении */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Тень */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
-
 .text-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Усиленная тень при наведении */
-  border-color: #e67e22; /* Изменение цвета обводки при наведении */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-color: #e67e22;
 }
-
 .text-item p {
   margin: 0;
 }
-
-/* Процесс работы */
 .process {
   text-align: center;
 }
-
 .section-subtitle {
   font-size: 24px;
   font-weight: bold;
   color: #007c9f;
   margin-bottom: 20px;
 }
-
 .process-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-
 .process-image {
   width: 100%;
   max-width: 800px;
   height: auto;
   display: block;
 }
-
 .steps {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
 }
-
 .step p {
   font-size: 16px;
   margin: 10px 0;
@@ -172,8 +147,6 @@
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
-
-/* Кнопки */
 .btn-primary {
   background: #007c9f;
   color: white;
@@ -186,11 +159,9 @@
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 12px rgba(255, 152, 0, 0.2);
 }
-
 .btn-primary:hover {
   background-color: #e67e22;
 }
-
 .text-center {
   text-align: center;
   margin-top: 40px;

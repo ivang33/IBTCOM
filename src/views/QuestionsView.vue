@@ -1,9 +1,7 @@
 <template>
   <section class="questions-page">
     <div class="container">
-      <!-- Заголовок -->
       <h2>Часто задаваемые вопросы</h2>
-
       <!-- Вопросы и ответы -->
       <div class="faq-items">
         <div class="faq-item">
@@ -70,8 +68,6 @@
           Для организаций достаточно прислать заявку на адрес электронной почты со своими реквизитами и информацией о имеющихся абонентах (номера, операторы, затраты, ФИО абонентов).
         </div>
       </div>
-
-      <!-- Кнопка "Задать свой вопрос" -->
       <div class="text-center">
         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#callbackModal">
           Задать свой вопрос
@@ -87,17 +83,17 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #f9f9f9; /* Легкий фон */
+  background-color: #f9f9f9;
   font-family: "JetBrains Mono", sans-serif;
 }
-
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 #app > section > div > h2{
-  color: #005f6f;
+  color: #007c9f;
+  font-weight: bold;
+  font-size: 35px;
 }
 .faq-items {
   display: grid;
@@ -105,29 +101,24 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивная сетка */
   grid-template-rows: repeat(4, auto); /* 4 строки */
 }
-
-@media (min-width: 768px) {
-  .faq-items {
-    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
-  }
-}
-
 .faq-item {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   padding: 20px;
 }
-
+p{
+  margin: 0;
+}
 .question {
   display: flex;
   align-items: center;
   gap: 10px;
   font-weight: bold;
   color: #007c9f;
-  margin: 0 auto;
+  margin: 0;
+  font-size: 16px;
 }
-
 .question-icon {
   width: 30px;
   height: 30px;
@@ -137,15 +128,12 @@
   align-items: center;
   justify-content: center;
 }
-
 .answer {
   margin-top: 10px;
   font-size: 16px;
   line-height: 1.6;
   color: #333;
 }
-
-/* Кнопка */
 .btn-primary {
   background: #007c9f;
   color: white;
@@ -158,16 +146,12 @@
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 12px rgba(255, 152, 0, 0.2);
 }
-
 .btn-primary:hover {
   background: #e67e22;
   transform: translateY(-2px);
 }
-
 .text-center {
   text-align: center;
   margin-top: 40px;
 }
 </style>
-<script setup>
-</script>

@@ -2,8 +2,8 @@
   <section class="services-page">
     <div class="container">
       <h2>Подберем и оптимизируем ПО</h2>
+      <!-- Сетка страницы -->
       <div class="grid">
-        <!-- Первая строка -->
         <div class="grid-item">
           <div class="icon-container">
             <img src="/consalt.png" alt="Консалтинговые услуги" />
@@ -34,8 +34,6 @@
           </div>
           <p>Организация системы управления программным обеспечением (SAM)</p>
         </div>
-
-        <!-- Вторая строка -->
         <div class="grid-item">
           <div class="icon-container">
             <img src="/program.png" alt="Программирование" />
@@ -66,8 +64,6 @@
           </div>
           <p>Работы с базами данных</p>
         </div>
-
-        <!-- Третья строка -->
         <div class="grid-item">
           <div class="icon-container">
             <img src="/mail.png" alt="Настройка почтовой системы" />
@@ -115,25 +111,20 @@
   color: #007c9f; /* Цвет текста */
   font-family: 'JetBrains Mono', sans-serif;
 }
-
 .container {
   max-width: 1200px;
   padding: 40px;
 }
-
 h2 {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
   margin-bottom: 40px;
-
 }
-
 .grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
-
 .grid-item {
   display: flex;
   flex-direction: column;
@@ -141,14 +132,12 @@ h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 10%;
 }
-
 .grid-item:hover {
   transform: scale(1.1);
   background-color: white;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   border-radius: 10%;
 }
-
 .icon-container {
   width: 60px;
   height: 60px;
@@ -157,13 +146,11 @@ h2 {
   align-items: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
-
 .icon-container img {
   width: 40px;
   height: 40px;
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)); /* Тень для иконки */
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
 }
-
 .grid-item p {
   font-size: 1rem;
   line-height: 1.5;
