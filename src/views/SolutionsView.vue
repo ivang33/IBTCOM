@@ -42,6 +42,7 @@
     </div>
   </section>
 </template>
+
 <style scoped>
 .solutions-page {
   min-height: 700px;
@@ -76,11 +77,16 @@ h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   border-radius: 10%;
 }
-.grid-item:hover {
-  transform: scale(1.1);
-  background-color: white;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+
+/* Hover-эффекты ТОЛЬКО для устройств с поддержкой hover */
+@media (hover: hover) {
+  .grid-item:hover {
+    transform: scale(1.1);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
 }
+
 .icon-container {
   width: 60px;
   height: 60px;
@@ -112,5 +118,61 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Адаптив для мобильных устройств */
+@media (max-width: 768px) {
+  .solutions-page {
+    min-height: auto;
+    padding: 30px 0;
+  }
+  .container {
+    padding: 20px;
+  }
+  h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-item {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+  }
+  .icon-container {
+    width: 50px;
+    height: 50px;
+  }
+  .icon-container img {
+    width: 35px;
+    height: 35px;
+  }
+  .grid-item p {
+    font-size: 0.9rem;
+  }
+  .description {
+    margin-top: 30px;
+    padding: 15px;
+    height: auto;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .grid-item p {
+    font-size: 0.85rem;
+  }
+  .description {
+    font-size: 0.85rem;
+    padding: 12px;
+  }
 }
 </style>

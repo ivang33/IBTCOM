@@ -28,10 +28,10 @@
 
 <style scoped>
 .contact-page {
-  min-height: 700px;
+  min-height: auto;
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 30px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -41,44 +41,75 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
+  padding: 0 15px;
   box-sizing: border-box;
-  gap: 40px;
+  gap: 30px;
 }
+
 .ibtcontainer, .container {
-  width: 110%;
-  padding: 0 20px;
+  width: 100%;
+  padding: 0 15px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .ibtcontainer h2, .container h2 {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #007c9f;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 28px;
 }
+
 .text-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);;
-  gap: 30px;
-  margin-top: 30px;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-top: 20px;
   text-align: center;
   width: 100%;
   max-width: 1000px;
-  margin-right: 40px;
 }
+
 .text-grid p {
-  font-size: 19px;
+  font-size: 16px;
   color: #007c9f;
-  line-height: 1.5;
+  line-height: 1.4;
   margin: 0;
+  padding: 12px;
+  background-color: #f0f8ff;
+  border-radius: 8px;
 }
+
 .responsive-image {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+/* Адаптив только для телефонов (до 768px) */
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 0 10px;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .ibtcontainer h2, .container h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .text-grid {
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .text-grid p {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
 </style>

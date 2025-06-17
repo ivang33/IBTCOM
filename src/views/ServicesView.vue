@@ -105,10 +105,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url('/bgprog.jpg'); /* Фоновое изображение */
+  background-image: url('/bgprog.jpg');
   background-size: cover;
   background-position: center;
-  color: #007c9f; /* Цвет текста */
+  color: #007c9f;
   font-family: 'JetBrains Mono', sans-serif;
 }
 .container {
@@ -132,12 +132,17 @@ h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 10%;
 }
-.grid-item:hover {
-  transform: scale(1.1);
-  background-color: white;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-  border-radius: 10%;
+
+/* Hover-эффекты ТОЛЬКО для устройств с поддержкой hover */
+@media (hover: hover) {
+  .grid-item:hover {
+    transform: scale(1.1);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    border-radius: 10%;
+  }
 }
+
 .icon-container {
   width: 60px;
   height: 60px;
@@ -156,5 +161,38 @@ h2 {
   line-height: 1.5;
   text-align: center;
   margin-top: 10px;
+}
+
+/* Адаптив для мобильных устройств */
+@media (max-width: 768px) {
+  .container {
+    padding: 5px;
+  }
+  h2 {
+    font-size: 24px;
+    margin: 20px;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+  }
+  .grid-item {
+    padding: 8px;
+    min-height: 120px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+  }
+  .icon-container {
+    width: 40px;
+    height: 40px;
+  }
+  .icon-container img {
+    width: 28px;
+    height: 28px;
+  }
+  .grid-item p {
+    font-size: 0.75rem;
+  }
 }
 </style>
