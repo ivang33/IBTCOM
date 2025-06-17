@@ -74,4 +74,37 @@ p {
 .telegram-button:hover {
   background-color: white;
 }
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .contact-info,
+  .legal-info {
+    text-align: center;
+  }
+
+  .socials {
+    order: -1;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .telegram-button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .telegram-button img {
+    width: 26px;
+    height: 26px;
+  }
+}
 </style>

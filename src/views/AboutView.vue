@@ -51,32 +51,36 @@
     </div>
   </section>
 </template>
+
 <style scoped>
 .about-page {
   font-family: "JetBrains Mono", sans-serif;
   background-color: #f9f9f9;
-  padding: 60px 20px;
+  padding: 40px 15px;
   color: #333;
   display: flex;
   justify-content: center;
 }
+
 .content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
 }
+
 .section-title {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: #007c9f;
 }
+
 .advantages-image {
   text-align: center;
   margin-bottom: 20px;
-  justify-content: center;
 }
+
 .advantages-image img {
   width: 100%;
   max-width: 800px;
@@ -84,69 +88,82 @@
   display: block;
   margin: 0 auto;
 }
+
 .advantages-text {
-  width: 900px;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 60px;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
 }
+
 .text-item {
-  margin: 5px;
   flex: 1 1 200px;
+  min-width: 150px;
   text-align: center;
   font-size: 16px;
   color: #333;
   background-color: #ffffff;
   border: 2px solid #007c9f;
   border-radius: 8px;
-  padding: 20px;
+  padding: 15px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
+
 .text-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   border-color: #e67e22;
 }
+
 .text-item p {
   margin: 0;
 }
+
 .process {
   text-align: center;
+  margin-bottom: 30px;
 }
+
 .section-subtitle {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   color: #007c9f;
   margin-bottom: 20px;
 }
+
 .process-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
+
 .process-image {
   width: 100%;
   max-width: 800px;
   height: auto;
   display: block;
 }
+
 .steps {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
 }
+
 .step p {
-  font-size: 16px;
-  margin: 10px 0;
-  padding: 12px 16px;
+  font-size: 15px;
+  margin: 8px 0;
+  padding: 12px 15px;
   background-color: #eef9ff;
   border-left: 4px solid #007c9f;
   border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
+
 .btn-primary {
   background: #007c9f;
   color: white;
@@ -157,13 +174,57 @@
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(255, 152, 0, 0.2);
+  width: 100%;
+  max-width: 300px;
 }
+
 .btn-primary:hover {
   background-color: #e67e22;
 }
+
 .text-center {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
+}
+
+/* Адаптив для мобильных устройств */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 30px 10px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .advantages-text {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .text-item {
+    flex: 1 1 auto;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .section-subtitle {
+    font-size: 20px;
+  }
+
+  .step p {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 15px;
+    max-width: 100%;
+  }
 }
 </style>
