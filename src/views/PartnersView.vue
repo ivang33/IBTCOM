@@ -43,6 +43,7 @@
   padding: 0 15px;
   box-sizing: border-box;
   gap: 30px;
+  height: 120%;
 }
 .ibtcontainer, .container {
   width: 100%;
@@ -80,7 +81,7 @@
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 6px;
 }
 /* Адаптивность для телефонов*/
 @media (max-width: 768px) {

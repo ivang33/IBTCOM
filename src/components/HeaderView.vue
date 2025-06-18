@@ -197,24 +197,22 @@
     width: 100%;
     padding: 10px 15px;
     text-align: center;
+    display: flex;
+    justify-content: center;
   }
-
   .logo {
     margin: 0 auto;
     max-width: 120px;
   }
-
   .company-name {
-    display: none; /* Скрываем название компании */
+    display: none;
   }
-
   .butcontainer {
     flex-direction: column;
     align-items: center;
     gap: 15px;
     grid-row: 3;
   }
-
   .contact-info {
     text-align: center;
     font-size: 14px;
@@ -226,17 +224,13 @@
     height: 45px;
     font-size: 14px;
   }
-
-  /* Модальное окно для мобильных */
   .modal-title {
     font-size: 18px;
   }
-
   .form-control {
     font-size: 14px;
     padding: 10px 12px;
   }
-
   .form-check-label {
     font-size: 12px;
   }
