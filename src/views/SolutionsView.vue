@@ -129,7 +129,8 @@ h2 {
     margin-bottom: 30px;
   }
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
   }
   .grid-item {
     padding: 15px;
