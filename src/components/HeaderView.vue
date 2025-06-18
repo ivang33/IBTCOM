@@ -205,8 +205,7 @@
   }
 
   .company-name {
-    font-size: 14px;
-    grid-row: 2;
+    display: none; /* Скрываем название компании */
   }
 
   .butcontainer {

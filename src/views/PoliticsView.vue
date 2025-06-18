@@ -103,21 +103,19 @@
 .policy-section li {
   margin-bottom: 0.5em;
 }
+/* Адаптивность для телефонов*/
 @media (max-width: 768px) {
   .policy-container {
     padding: 15px 10px;
     line-height: 1.5;
   }
-
   .policy-section {
     margin-bottom: 25px;
   }
-
   .policy-section h2 {
     font-size: 24px;
     margin-bottom: 12px;
   }
-
   .policy-section h3 {
     font-size: 18px;
     margin-top: 20px;
@@ -125,12 +123,10 @@
     border-left-width: 3px;
     padding-left: 6px;
   }
-
   .policy-section p {
     font-size: 14px;
     line-height: 1.4;
   }
-
   .policy-section ul {
     font-size: 14px;
     padding-left: 15px;

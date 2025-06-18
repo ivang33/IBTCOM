@@ -42,7 +42,6 @@
     </div>
   </section>
 </template>
-
 <style scoped>
 .solutions-page {
   min-height: 700px;
@@ -77,8 +76,6 @@ h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   border-radius: 10%;
 }
-
-/* Hover-эффекты ТОЛЬКО для устройств с поддержкой hover */
 @media (hover: hover) {
   .grid-item:hover {
     transform: scale(1.1);
@@ -86,7 +83,6 @@ h2 {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   }
 }
-
 .icon-container {
   width: 60px;
   height: 60px;
@@ -119,8 +115,7 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-
-/* Адаптив для мобильных устройств */
+/* Адаптивность для телефонов*/
 @media (max-width: 768px) {
   .solutions-page {
     min-height: auto;
@@ -157,22 +152,6 @@ h2 {
     padding: 15px;
     height: auto;
     font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-  h2 {
-    font-size: 24px;
-  }
-  .grid-item p {
-    font-size: 0.85rem;
-  }
-  .description {
-    font-size: 0.85rem;
-    padding: 12px;
   }
 }
 </style>

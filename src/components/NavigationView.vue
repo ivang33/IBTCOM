@@ -2,11 +2,9 @@
   <nav class="main-nav">
     <div class="container">
       <div class="nav-header">
-        <!-- Бургер-кнопка для мобильных -->
         <button class="burger" @click="toggleMenu">
           ☰
         </button>
-
         <!-- Меню -->
         <ul :class="{ 'active': isMenuOpen }">
           <li><router-link to="/" @click="closeMenu">Главная</router-link></li>
@@ -20,7 +18,6 @@
     </div>
   </nav>
 </template>
-
 <style scoped>
 .main-nav {
   background: #007c9f;
@@ -28,19 +25,16 @@
   display: flex;
   align-items: center;
 }
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
 }
-
 .nav-header {
   position: relative;
   width: 100%;
 }
-
 .main-nav ul {
   list-style: none;
   padding: 0;
@@ -49,11 +43,9 @@
   justify-content: center;
   gap: 20px;
 }
-
 .main-nav li {
   margin: 0;
 }
-
 .main-nav a {
   text-decoration: none;
   color: white;
@@ -64,12 +56,10 @@
   padding: 15px 0;
   display: block;
 }
-
 .main-nav a:hover {
   color: #ff9800;
   transform: translateY(-2px);
 }
-
 .burger {
   display: none;
   background: none;
@@ -83,13 +73,11 @@
   transform: translateY(-50%);
   z-index: 10;
 }
-
-/* Адаптив только для мобильных устройств */
+/* Адаптивность для телефонов*/
 @media (max-width: 768px) {
   .burger {
     display: block;
   }
-
   .main-nav ul {
     position: absolute;
     top: 50px;
@@ -107,32 +95,25 @@
     z-index: 5;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   }
-
   .main-nav ul.active {
     transform: scaleY(1);
   }
-
   .main-nav li {
     width: 100%;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
-
   .main-nav a {
     padding: 12px 20px;
   }
 }
 </style>
-
 <script setup>
 import { ref } from 'vue';
-
 const isMenuOpen = ref(false);
-
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
-
 const closeMenu = () => {
   isMenuOpen.value = false;
 };

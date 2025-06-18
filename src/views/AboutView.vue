@@ -51,7 +51,6 @@
     </div>
   </section>
 </template>
-
 <style scoped>
 .about-page {
   font-family: "JetBrains Mono", sans-serif;
@@ -61,13 +60,11 @@
   display: flex;
   justify-content: center;
 }
-
 .content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
-
 .section-title {
   font-size: 28px;
   font-weight: bold;
@@ -75,12 +72,10 @@
   margin-bottom: 30px;
   color: #007c9f;
 }
-
 .advantages-image {
   text-align: center;
   margin-bottom: 20px;
 }
-
 .advantages-image img {
   width: 100%;
   max-width: 800px;
@@ -88,7 +83,6 @@
   display: block;
   margin: 0 auto;
 }
-
 .advantages-text {
   width: 100%;
   display: flex;
@@ -97,7 +91,6 @@
   gap: 15px;
   margin-bottom: 40px;
 }
-
 .text-item {
   flex: 1 1 200px;
   min-width: 150px;
@@ -111,49 +104,41 @@
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
-
 .text-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   border-color: #e67e22;
 }
-
 .text-item p {
   margin: 0;
 }
-
 .process {
   text-align: center;
   margin-bottom: 30px;
 }
-
 .section-subtitle {
   font-size: 22px;
   font-weight: bold;
   color: #007c9f;
   margin-bottom: 20px;
 }
-
 .process-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-
 .process-image {
   width: 100%;
   max-width: 800px;
   height: auto;
   display: block;
 }
-
 .steps {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
 }
-
 .step p {
   font-size: 15px;
   margin: 8px 0;
@@ -163,7 +148,6 @@
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
-
 .btn-primary {
   background: #007c9f;
   color: white;
@@ -178,49 +162,40 @@
   width: 100%;
   max-width: 300px;
 }
-
 .btn-primary:hover {
   background-color: #e67e22;
 }
-
 .text-center {
   text-align: center;
   margin-top: 30px;
 }
-
-/* Адаптив для мобильных устройств */
+/* Адаптивность для телефонов*/
 @media (max-width: 768px) {
   .about-page {
     padding: 30px 10px;
   }
-
   .section-title {
     font-size: 24px;
     margin-bottom: 20px;
   }
-
   .advantages-text {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 30px;
   }
-
   .text-item {
     flex: 1 1 auto;
     width: 100%;
     padding: 12px;
     font-size: 15px;
   }
-
   .section-subtitle {
     font-size: 20px;
   }
-
   .step p {
     font-size: 14px;
     padding: 10px 12px;
   }
-
   .btn-primary {
     padding: 10px 20px;
     font-size: 15px;

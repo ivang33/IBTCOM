@@ -25,7 +25,6 @@
     </div>
   </section>
 </template>
-
 <style scoped>
 .contact-page {
   min-height: auto;
@@ -45,7 +44,6 @@
   box-sizing: border-box;
   gap: 30px;
 }
-
 .ibtcontainer, .container {
   width: 100%;
   padding: 0 15px;
@@ -54,14 +52,12 @@
   flex-direction: column;
   align-items: center;
 }
-
 .ibtcontainer h2, .container h2 {
   margin-bottom: 20px;
   color: #007c9f;
   font-weight: bold;
   font-size: 28px;
 }
-
 .text-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -71,7 +67,6 @@
   width: 100%;
   max-width: 1000px;
 }
-
 .text-grid p {
   font-size: 16px;
   color: #007c9f;
@@ -81,32 +76,27 @@
   background-color: #f0f8ff;
   border-radius: 8px;
 }
-
 .responsive-image {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
-
-/* Адаптив только для телефонов (до 768px) */
+/* Адаптивность для телефонов*/
 @media (max-width: 768px) {
   .contact-page {
     padding: 0 10px;
     gap: 20px;
     margin-top: 20px;
   }
-
   .ibtcontainer h2, .container h2 {
     font-size: 22px;
     margin-bottom: 15px;
   }
-
   .text-grid {
     gap: 10px;
     margin-top: 15px;
   }
-
   .text-grid p {
     font-size: 14px;
     padding: 10px;

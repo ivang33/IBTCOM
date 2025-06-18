@@ -132,8 +132,6 @@ h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 10%;
 }
-
-/* Hover-эффекты ТОЛЬКО для устройств с поддержкой hover */
 @media (hover: hover) {
   .grid-item:hover {
     transform: scale(1.1);
@@ -142,7 +140,6 @@ h2 {
     border-radius: 10%;
   }
 }
-
 .icon-container {
   width: 60px;
   height: 60px;
@@ -162,8 +159,7 @@ h2 {
   text-align: center;
   margin-top: 10px;
 }
-
-/* Адаптив для мобильных устройств */
+/* Адаптивность для телефонов*/
 @media (max-width: 768px) {
   .container {
     padding: 5px;

@@ -33,7 +33,6 @@
     </div>
   </section>
 </template>
-
 <style scoped>
 .home-page {
   min-height: 700px;
@@ -111,35 +110,31 @@
 .icon-card:hover .card-text {
   transform: translate(-50%, -50%) scale(1.06);
 }
+/* Адаптивность для телефонов*/
 @media (max-width: 768px) {
   .home-page h2 {
     font-size: 24px;
     padding-top: 10px;
   }
-
   .icons {
     gap: 15px;
     margin-top: 30px;
   }
-
   .icon-card {
     width: 100%;
     height: auto;
     min-height: 300px;
     max-width: 100%;
   }
-
   .icon-card img {
     height: auto;
   }
-
   .card-text {
     font-size: 14px;
     padding: 10px;
     width: 90%;
     top: 38%;
   }
-
   .container {
     padding: 10px;
   }
